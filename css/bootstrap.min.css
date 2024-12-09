@@ -4749,7 +4749,9 @@ fieldset:disabled .btn {
 
 .navbar-light .navbar-toggler {
     color: rgba(0, 0, 0, 0.55);
-    border-color: rgba(0, 0, 0, 0.1)
+    border-color: rgba(0, 0, 0, 0.1);
+    background: #fff;
+    border-radius: 10px;
 }
 
 .navbar-light .navbar-toggler-icon {
