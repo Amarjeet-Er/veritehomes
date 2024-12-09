@@ -10,8 +10,8 @@
         }, 1);
     };
     spinner();
-    
-    
+
+
     // Initiate the wowjs
     new WOW().init();
 
@@ -24,8 +24,8 @@
             $('.sticky-top').removeClass('shadow-sm').css('top', '-100px');
         }
     });
-    
-    
+
+
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {
@@ -35,7 +35,7 @@
         }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
         return false;
     });
 
@@ -68,17 +68,41 @@
     });
 
 
-    // Testimonials carousel
-    $('.testimonial-carousel').owlCarousel({
+
+    // testimonial carousel
+    $(".testimonial-carousel").owlCarousel({
         autoplay: true,
-        smartSpeed: 1000,
-        loop: true,
-        nav: false,
+        smartSpeed: 1500,
+        center: false,
         dots: true,
-        items: 1,
-        dotsData: true,
+        loop: true,
+        margin: 25,
+        nav: true,
+        navText: [
+            '<i class="fa fa-angle-right"></i>',
+            '<i class="fa fa-angle-left"></i>'
+        ],
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            576: {
+                items: 1
+            },
+            768: {
+                items: 2
+            },
+            992: {
+                items: 2
+            },
+            1200: {
+                items: 3
+            }
+        }
     });
 
-    
+
+
 })(jQuery);
 

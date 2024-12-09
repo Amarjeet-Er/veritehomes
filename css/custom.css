@@ -1,4 +1,4 @@
-/* Hover Effect */
+/* How We Work start */
 .step-box {
     display: flex;
     flex-direction: column;
@@ -6,7 +6,6 @@
     align-items: center;
     padding: 2rem;
     height: 250px;
-    /* Fixed height for all boxes */
     border-radius: 10px;
     border: 1px solid #ddd;
     text-align: center;
@@ -17,43 +16,36 @@
 /* Hover effect for color and background */
 .step-box:hover {
     background-color: #b78d65;
-    /* Blue background */
     color: white;
-    /* Text color white */
 }
 
 .step-box:hover .step-icon {
     color: white;
-    /* Icon color change to white on hover */
 }
 
 .step-box:hover .step-text {
     color: white;
-    /* Text color change to white on hover */
 }
 
 /* Ensure equal box height on smaller screens */
 @media (max-width: 576px) {
     .step-box {
         height: auto;
-        /* Adjust height for smaller screens */
     }
 }
 
 /* Icon Styling */
 .step-icon {
     color: #0d6efd;
-    /* Default icon color */
     transition: color 0.3s ease;
 }
 
 /* Equalize icon size */
 .step-icon {
     font-size: 3rem;
-    /* Make the icon size uniform */
 }
 
-
+/* How We Work end */
 
 
 /*** Footer ***/
@@ -123,3 +115,20 @@
 }
 
 /* footer end */
+
+
+/* Custom cursor start */
+.cursor {
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #fdf089;
+    pointer-events: none;
+    z-index: 9999;
+    transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    border: 2px solid #fff;
+}
+
+/* Custom cursor end */
