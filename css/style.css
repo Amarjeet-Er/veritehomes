@@ -92,14 +92,14 @@ h6,
 }
 
 .btn-outline-body {
-    color: var(--primary);
-    border-color: #777777;
+    color: var(--light);
+    border-color: var(--light);
 }
 
 .btn-outline-body:hover {
-    color: #FFFFFF;
-    background: var(--primary);
-    border-color: var(--primary);
+    color: var(--dark);
+    border-color: var(--bs-dark);
+    background: var(--secondary);
 }
 
 
@@ -124,7 +124,7 @@ h6,
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-    color: var(--warning);
+    color: yellow;
 }
 
 .navbar.sticky-top {
