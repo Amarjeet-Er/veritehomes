@@ -198,6 +198,7 @@
 }
 
 @media (max-width: 767px) {
+
     .navbar-light .navbar-nav .nav-link {
         font-size: 15px;
     }
