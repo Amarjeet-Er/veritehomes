@@ -8347,6 +8347,10 @@ fieldset:disabled .btn {
     background-color: #6c757d !important
 }
 
+.custom-text {
+    color: #00405a !important;
+}
+
 .bg-custom-top {
     /* background-color: #00405a !important; */
     /* background-color: #B78D65 !important; */
