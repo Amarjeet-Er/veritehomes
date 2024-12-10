@@ -496,7 +496,8 @@
                                 <div class="col-md-6" style="min-height: 350px;">
                                     <div class="position-relative h-100">
                                         <img class="position-absolute img-fluid w-100 h-100" src="img/k11.jpg"
-                                            style="object-fit: cover;" alt="">
+                                            style="object-fit: cover;" alt="" data-bs-toggle="modal"
+                                            data-bs-target="#imageModal" onclick="openModal('img/k11.jpg')">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -516,7 +517,8 @@
                                 <div class="col-md-6" style="min-height: 350px;">
                                     <div class="position-relative h-100">
                                         <img class="position-absolute img-fluid w-100 h-100" src="img/w4.jpg"
-                                            style="object-fit: cover;" alt="">
+                                            style="object-fit: cover;" alt="" data-bs-toggle="modal"
+                                            data-bs-target="#imageModal" onclick="openModal('img/w4.jpg')">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -536,7 +538,8 @@
                                 <div class="col-md-6" style="min-height: 350px;">
                                     <div class="position-relative h-100">
                                         <img class="position-absolute img-fluid w-100 h-100" src="img/vanities.jpg"
-                                            style="object-fit: cover;" alt="">
+                                            style="object-fit: cover;" alt="" data-bs-toggle="modal"
+                                            data-bs-target="#imageModal" onclick="openModal('img/vanities.jpg')">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -556,7 +559,8 @@
                                 <div class="col-md-6" style="min-height: 350px;">
                                     <div class="position-relative h-100">
                                         <img class="position-absolute img-fluid w-100 h-100" src="img/wallpan1.jpg"
-                                            style="object-fit: cover;" alt="">
+                                            style="object-fit: cover;" alt="" data-bs-toggle="modal"
+                                            data-bs-target="#imageModal" onclick="openModal('img/wallpan1.jpg')">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -576,7 +580,8 @@
                                 <div class="col-md-6" style="min-height: 350px;">
                                     <div class="position-relative h-100">
                                         <img class="position-absolute img-fluid w-100 h-100" src="img/tvvv1.jpg"
-                                            style="object-fit: cover;" alt="">
+                                            style="object-fit: cover;" alt="" data-bs-toggle="modal"
+                                            data-bs-target="#imageModal" onclick="openModal('img/tvvv1.jpg')">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -596,9 +601,23 @@
             </div>
         </div>
     </div>
+
+    <!-- Modal to display image in full size -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModalLabel">Project Image</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="fullImage" class="img-fluid w-100" src="" alt="Full View">
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Project End -->
 
-    
 
     <!-- How We Work Section Start -->
     <div class="container py-5">
@@ -947,6 +966,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/custom.js"></script>
 </body>
 
 </html>
