@@ -40,7 +40,8 @@
     <!-- Spinner Start -->
     <div id="spinner"
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border position-relative text-primary" style="width: 6rem; height: 6rem;" role="status">
+        <div class="spinner-border position-relative text-danger" style="width: 6rem; height: 6rem; z-index: 100;"
+            role="status">
         </div>
         <img class="position-absolute top-50 start-50 translate-middle" src="img/logoo.png" alt="Icon">
     </div>
@@ -48,7 +49,7 @@
 
 
     <!-- Topbar Start -->
-    <div class="container-fluid bg-primary p-0 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container-fluid bg-custom-top p-0 wow fadeIn" data-wow-delay="0.1s">
         <div class="row gx-0 d-none d-lg-flex">
             <div class="col-lg-7 px-5 text-start">
                 <div class="h-100 d-inline-flex align-items-center py-3 me-3">
@@ -91,7 +92,7 @@
     <nav class="navbar navbar-expand-lg bg-custom navbar-light sticky-top py-lg-0 px-lg-5 wow fadeIn"
         data-wow-delay="0.1s">
         <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-            <h1 class="text-primary m-0"><img class="me-3" src="img/logoo.png" alt="Icon"></h1>
+            <h1 class="text-primary m-0 navbar-brand-logo"><img class="me-3" src="img/logoo.png" alt="Icon"></h1>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -282,7 +283,7 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item d-flex position-relative text-center h-100">
                         <img class="bg-img" src="img/service-1.jpg" alt="">
-                        <div class="service-text p-5">
+                        <div class="service-text p-4">
                             <img class="mb-4" src="img/icons/icon-5.png" alt="Icon">
                             <h3 class="mb-3">Modular Kitchens</h3>
                             <p class="mb-4">
@@ -296,7 +297,7 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item d-flex position-relative text-center h-100">
                         <img class="bg-img" src="img/service-2.jpg" alt="">
-                        <div class="service-text p-5">
+                        <div class="service-text p-4">
                             <img class="mb-4" src="img/icons/icon-6.png" alt="Icon">
                             <h3 class="mb-3"> Modular Wardrobes </h3>
                             <p class="mb-4">
@@ -311,7 +312,7 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item d-flex position-relative text-center h-100">
                         <img class="bg-img" src="img/service-3.jpg" alt="">
-                        <div class="service-text p-5">
+                        <div class="service-text p-4">
                             <img class="mb-4" src="img/icons/icon-7.png" alt="Icon">
                             <h3 class="mb-3">Vanities</h3>
                             <p class="mb-4">
@@ -325,7 +326,7 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item d-flex position-relative text-center h-100">
                         <img class="bg-img" src="img/service-4.jpg" alt="">
-                        <div class="service-text p-5">
+                        <div class="service-text p-4">
                             <img class="mb-4" src="img/icons/icon-8.png" alt="Icon">
                             <h3 class="mb-3"> Wall Panellings </h3>
                             <p class="mb-4">
@@ -339,7 +340,7 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item d-flex position-relative text-center h-100">
                         <img class="bg-img" src="img/service-5.jpg" alt="">
-                        <div class="service-text p-5">
+                        <div class="service-text p-4">
                             <img class="mb-4" src="img/icons/icon-9.png" alt="Icon">
                             <h3 class="mb-3"> TV Units </h3>
                             <p class="mb-4">
@@ -353,7 +354,7 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item d-flex position-relative text-center h-100">
                         <img class="bg-img" src="img/service-6.jpg" alt="">
-                        <div class="service-text p-5">
+                        <div class="service-text p-4">
                             <img class="mb-4" src="img/icons/icon-10.png" alt="Icon">
                             <h3 class="mb-3">Construction</h3>
                             <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
@@ -862,26 +863,27 @@
             </div>
         </div>
         <div class="container">
-            <div class="copyright">
-                <div class="row d-flex">
-                    <div class="col-md-6 text-center align-items-center d-flex text-md-start mb-3 mb-md-0">
-                        Designed & Developed by:
-                        &nbsp;
+            <div class="copyright py-3">
+                <div class="row align-items-center">
+                    <div
+                        class="col-md-6 text-center text-md-start mb-3 mb-md-0 d-flex justify-content-center justify-content-md-start align-items-center">
+                        Designed & Developed by : &nbsp;
                         <img src="img/macreel-logo.png" alt="Macreel" title="Macreel" height="25" class="bg-light p-1">
                     </div>
-                    <div class="col-md-6 d-flex justify-content-end position-relative button-40px">
+                    <div class="col-md-6 d-flex justify-content-center justify-content-md-end">
                         <div class="d-flex">
                             <a class="btn p-0 text-light me-3" href="#"><i class="fab fa-facebook-f"></i></a>
                             <a class="btn p-0 text-light me-3" href="#"><i class="fab fa-instagram"></i></a>
                             <a class="btn p-0 text-light me-3" href="#"><i class="fab fa-twitter"></i></a>
                             <a class="btn p-0 text-light me-3" href="#"><i class="fab fa-linkedin-in"></i></a>
                             <a class="btn p-0 text-light me-3" href="#"><i class="fab fa-youtube"></i></a>
-                            <a class="btn p-0 text-light me-3" href="#"><i class="fab fa-google-plus-g"></i></a>
+                            <a class="btn p-0 text-light" href="#"><i class="fab fa-google-plus-g"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
     <!-- Footer End -->
 
@@ -903,7 +905,7 @@
 
 
     <!-- MagicCursor js file -->
-    <script src="js/magiccursor.js"></script>
+    <script src="js/cursor-magic.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

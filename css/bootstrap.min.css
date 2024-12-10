@@ -8347,8 +8347,19 @@ fieldset:disabled .btn {
     background-color: #6c757d !important
 }
 
+.bg-custom-top {
+    /* background-color: #00405a !important; */
+    /* background-color: #B78D65 !important; */
+    /* background-color: #adb716  !important; */
+    background-color: #00405a !important;
+}
+
 .bg-custom {
-    background-color: #1300e7bf !important
+    /* background-color: #B78D65 !important; */
+    /* background-color: #d1b808 !important; */
+    /* background-color: #1300e7bf !important; */
+    /* background-color: #0056ff  !important; */
+    background-color: #0c6183 !important;
 }
 
 .bg-success {
