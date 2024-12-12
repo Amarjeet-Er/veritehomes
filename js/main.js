@@ -16,14 +16,17 @@
     new WOW().init();
 
 
-    // Sticky Navbar
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 300) {
-            $('.sticky-top').addClass('shadow-sm').css('top', '0px');
+        const videoBottom = $('.video-container').offset().top + $('.video-container').outerHeight();
+        const scrollTop = $(this).scrollTop();
+    
+        if (scrollTop >= videoBottom) {
+            $('.scroll-header').addClass('sticky');
         } else {
-            $('.sticky-top').removeClass('shadow-sm').css('top', '-100px');
+            $('.scroll-header').removeClass('sticky');
         }
     });
+    
 
 
     // Back to top button

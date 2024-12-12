@@ -1,5 +1,20 @@
-// Function to open modal and display clicked image
+// project Function to open modal and display clicked image
 function openModal(imagePath) {
     var modalImage = document.getElementById('fullImage');
-    modalImage.src = imagePath;  // Update the image source with the clicked image path
+    modalImage.src = imagePath;
 }
+
+const texts = ["Welcome to Verite Homes", "We Provide Lifestyle Product Design"];
+let currentIndex = 0;
+const textElement = document.getElementById("dynamic-text");
+
+// Function to update the text and reset animation
+function updateText() {
+    textElement.textContent = texts[currentIndex];
+    textElement.classList.remove('slide-animation');
+    void textElement.offsetWidth;
+    textElement.classList.add('slide-animation');
+    currentIndex = (currentIndex + 1) % texts.length;
+}
+// Change text every 10 seconds
+setInterval(updateText, 10000); // Adjust interval based on your animation timing
