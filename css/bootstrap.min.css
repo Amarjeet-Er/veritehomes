@@ -4480,7 +4480,7 @@ fieldset:disabled .btn {
 .navbar-collapse {
     flex-basis: 100%;
     flex-grow: 1;
-    align-items: center
+    align-items: center;
 }
 
 .navbar-toggler {
@@ -8389,6 +8389,9 @@ fieldset:disabled .btn {
 
 .bg-dark {
     background-color: #6c757d !important
+}
+.bg-custom-footer {
+    background-color: #252525 !important
 }
 
 .bg-body {

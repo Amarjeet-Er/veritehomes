@@ -4,7 +4,7 @@ function openModal(imagePath) {
     modalImage.src = imagePath;
 }
 
-const texts = ["Welcome to Verite Homes", "We Provide Lifestyle Product Design"];
+const texts = ["Welcome to Verite Homes", "Life Products as they should be"];
 let currentIndex = 0;
 const textElement = document.getElementById("dynamic-text");
 
@@ -17,4 +17,4 @@ function updateText() {
     currentIndex = (currentIndex + 1) % texts.length;
 }
 // Change text every 10 seconds
-setInterval(updateText, 10000); // Adjust interval based on your animation timing
+setInterval(updateText, 2000); // Adjust interval based on your animation timing
