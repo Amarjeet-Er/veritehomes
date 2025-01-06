@@ -56,7 +56,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark scroll-header">
             <div class="container-fluid px-4">
                 <a class="navbar-brand logo-company" href="index.html">
-                    <img src="img/logoo.png" alt="Logo">
+                    <img src="img/logo.png" alt="Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
@@ -76,6 +76,9 @@
                             <a class="nav-link" href="#">Project</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#pdfModal">Catalogue</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#">Contact</a>
                         </li>
                     </ul>
@@ -83,15 +86,26 @@
             </div>
         </nav>
 
+        <!-- PDF Modal -->
+        <div class="modal fade" id="pdfModal" tabindex="-1" aria-labelledby="pdfModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="pdfModalLabel">Catalogue</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Embed PDF without download controls -->
+                        <iframe src="img/Catalogue.pdf#toolbar=0&navpanes=0&scrollbar=0" width="100%" height="500px"
+                            style="border: none;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Dynamic Text Overlay -->
         <div class="video-text-overlay">
-            <h1 id="dynamic-text" class="text-center slide-animation">Life Products as they should be</h1>
-            <!-- <p class="w-100 text-center ">
-                <span class="d-block w-50 mx-auto p-2 video-upper-text">
-                    Started with a vision of bringing world class luxury to our homes, one thing we at Verite commit our
-                    clients is that they can count on us while they are on a path of getting their dream home done.
-                </span>
-            </p> -->
+            <h1 id="dynamic-text" class="text-center slide-animation">Life products as they should be!</h1>
         </div>
 
         <!-- Video Background -->
@@ -119,7 +133,7 @@
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                     <h4 class="section-title">About Us</h4>
                     <h1 class="display-5 mb-2">
-                        A Creative Approach to Your Dream Home - Verite Homes
+                        A creative approach to your dream home - verite homes
                     </h1>
                     <p>
                         Started with a vision of bringing world class luxury to our homes, one thing we at Verite commit
@@ -160,9 +174,6 @@
                             <i class="fas fa-drafting-compass fa-3x"></i>
                         </div>
                         <h3 class="mb-3">Best Design</h3>
-                        <p class="mb-0">
-                            Started with a vision of bringing world class luxury to our homes.
-                        </p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -172,9 +183,7 @@
                             <i class="fas fa-chalkboard-teacher fa-3x"></i>
                         </div>
                         <h3 class="mb-3">Skilled Team</h3>
-                        <p class="mb-0">
-                            With Verite, our clients are assured of every detail, inch to inch commitment
-                        </p>
+
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -184,9 +193,7 @@
                             <i class="fas fa-certificate fa-3x"></i>
                         </div>
                         <h3 class="mb-3">Trusted Work</h3>
-                        <p class="mb-0">
-                            We welcome you here as we introduce Verite Homes and all the products.
-                        </p>
+
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -196,9 +203,7 @@
                             <i class="fas fa-coins fa-3x"></i>
                         </div>
                         <h3 class="mb-3">Low Cost</h3>
-                        <p class="mb-0">
-                            services we offer so you can experience truly Luxurious than luxury lifestyle.
-                        </p>
+
                     </div>
                 </div>
             </div>
@@ -210,25 +215,16 @@
     <div class="container-xxl py-3">
         <div class="container">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
-                <h4 class="section-title">Our Services</h4>
-                <h1 class="display-5 mb-4">We Provide Lifestyle Product Design Services.</h1>
-                <p>
-                    We provide expert advice in selecting the optimal elements for your dream home, removing any doubts
-                    about color, materials, and finishes. Our committed guidance guarantees that our clients make
-                    well-informed choices at every stage of the process.
-                </p>
+                <h1 class="display-5 mb-4">Our Services</h1>
             </div>
             <div class="row g-4 d-flex justify-content-center">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item d-flex position-relative text-center h-100">
                         <img class="bg-img" src="img/images/The Urban.jpg" alt="">
-                        <div class="service-text p-4">
+                        <div class="service-text p-4" style="width: 100%;">
                             <i class="fas fa-blender fa-5x text-primary mb-4"></i>
                             <h3 class="mb-3">Kitchen</h3>
-                            <p class="mb-4">
-                                Modular kitchens are the latest forms of doing a kitchen. Our kitchens are totally
-                                personalised in every way possible.
-                            </p>
+
                             <a class="btn" href="">Read More</a>
                         </div>
                     </div>
@@ -236,14 +232,10 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item d-flex position-relative text-center h-100">
                         <img class="bg-img" src="img/images/The Chalet Wardrobe.JPG" alt="">
-                        <div class="service-text p-4">
+                        <div class="service-text p-4" style="width: 100%;">
                             <i class="fas fa-box fa-5x text-primary mb-4"></i>
                             <h3 class="mb-3"> Wardrobe </h3>
-                            <p class="mb-4">
-                                As we talk about wardrobes, our wardrobes are not just a box structure stuffed with
-                                belongings, but they are designed smartly so you never have to imagine a closet as they
-                                were done decades ago.
-                            </p>
+
                             <a class="btn" href=""></i>Read More</a>
                         </div>
                     </div>
@@ -251,13 +243,9 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item d-flex position-relative text-center h-100">
                         <img class="bg-img" src="img/images/G1.jpg" alt="">
-                        <div class="service-text p-4">
+                        <div class="service-text p-4" style="width: 100%;">
                             <i class="fas fa-bath fa-5x text-primary mb-4"></i>
-                            <h3 class="mb-3">Vanitie</h3>
-                            <p class="mb-4">
-                                Vanities as we speak are not just a furniture piece that holds a sink and faucet, but in
-                                today’s world they act as a design element for the space used in.
-                            </p>
+                            <h3 class="mb-3">Vanity</h3>
                             <a class="btn" href=""></i>Read More</a>
                         </div>
                     </div>
@@ -265,41 +253,42 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item d-flex position-relative text-center h-100">
                         <img class="bg-img" src="img/wallpan1.jpg" alt="">
-                        <div class="service-text p-4">
+                        <div class="service-text p-4" style="width: 100%;">
                             <i class="fas fa-building fa-5x text-primary mb-4"></i>
-                            <h3 class="mb-3"> Wall Panelling </h3>
-                            <p class="mb-4">
-                                Panellings are a dress up for walls that holds the power to smartly highlight a area of
-                                your house.
-                            </p>
+                            <h3 class="mb-3"> Panelling </h3>
+
                             <a class="btn" href=""></i>Read More</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item d-flex position-relative text-center h-100">
-                        <img class="bg-img" src="img/images/The Linea.jpg" alt="">
-                        <div class="service-text p-4">
-                            <i class="fas fa-tv fa-5x text-primary mb-4"></i>
-                            <h3 class="mb-3"> Bar Setup </h3>
-                            <p class="mb-4">
-                                A well-designed bar setup is essential for both functionality and aesthetic appeal.
-                                Below is a guide to organizing a bar setup.
-                            </p>
+                        <img class="bg-img" src="img/bar-setup.JPG" alt="">
+                        <div class="service-text p-4" style="width: 100%;">
+                            <i class="fas fa-hard-hat fa-5x text-primary mb-4"></i>
+                            <h3 class="mb-3"> Bar </h3>
+
                             <a class="btn" href=""></i>Read More</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item d-flex position-relative text-center h-100">
-                        <img class="bg-img" src="img/images/D2.jpg" alt="">
-                        <div class="service-text p-4">
-                            <i class="fas fa-hard-hat fa-5x text-primary mb-4"></i>
+                        <img class="bg-img" src="img/images/C2.jpg" alt="">
+                        <div class="service-text p-4" style="width: 100%;">
+                            <i class="fas fa-tv fa-5x text-primary mb-4"></i>
                             <h3 class="mb-3">Console</h3>
-                            <p class="mb-4">
-                                Never watch TV the traditional way again. Enjoy that favourite series with
-                                our smartly designed and personalised TV space.
-                            </p>
+
+                            <a class="btn" href=""></i>Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item d-flex position-relative text-center h-100">
+                        <img class="bg-img" src="img/officeSolutions.png" alt="">
+                        <div class="service-text p-4" style="width: 100%;">
+                            <i class="fas fa-briefcase fa-5x text-primary mb-4"></i>
+                            <h3 class="mb-3">Office solutions</h3>
                             <a class="btn" href=""></i>Read More</a>
                         </div>
                     </div>
@@ -315,10 +304,9 @@
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <h4 class="section-title">Why Choose Us!</h4>
                     <h1 class="display-5 mb-4">You’re your own designers and we’re just implenters</h1>
                     <p class="mb-4">
-                        At Verite Home, we understand that exceptional design is only as good as its execution.
+                        At Verite, we understand that exceptional design is only as good as its execution.
                         That's why we don't just create beautiful concepts—we bring them to life. Here's why you should
                         choose us.
                     </p>
@@ -370,205 +358,6 @@
         </div>
     </div>
     <!-- why choose us End -->
-
-
-    <!-- Project Start -->
-    <div class="container-xxl project py-5">
-        <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h4 class="section-title">Our Projects</h4>
-                <h1 class="display-5 mb-4">
-                    Our Outstanding and Latest Projects
-                </h1>
-            </div>
-            <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="col-lg-4">
-                    <div class="nav nav-pills d-flex justify-content-between w-100 h-100 me-4">
-                        <button class="nav-link w-100 d-flex align-items-center text-start p-3 mb-3 active"
-                            data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
-                            <h3 class="m-0">01. Kitchen</h3>
-                        </button>
-                        <button class="nav-link w-100 d-flex align-items-center text-start p-3 mb-3"
-                            data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
-                            <h3 class="m-0">02. Wardrobe</h3>
-                        </button>
-                        <button class="nav-link w-100 d-flex align-items-center text-start p-3 mb-3"
-                            data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
-                            <h3 class="m-0">03. Vanitie</h3>
-                        </button>
-                        <button class="nav-link w-100 d-flex align-items-center text-start p-3 mb-3"
-                            data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button">
-                            <h3 class="m-0">04. Wall Panelling</h3>
-                        </button>
-                        <button class="nav-link w-100 d-flex align-items-center text-start p-3 mb-3"
-                            data-bs-toggle="pill" data-bs-target="#tab-pane-5" type="button">
-                            <h3 class="m-0">05. Bar Setup</h3>
-                        </button>
-                        <button class="nav-link w-100 d-flex align-items-center text-start p-3 mb-0"
-                            data-bs-toggle="pill" data-bs-target="#tab-pane-6" type="button">
-                            <h3 class="m-0">05. Console</h3>
-                        </button>
-                    </div>
-                </div>
-                <div class="col-lg-8">
-                    <div class="tab-content w-100">
-                        <div class="tab-pane fade show active" id="tab-pane-1">
-                            <div class="row g-4">
-                                <div class="col-md-6" style="min-height: 350px;">
-                                    <div class="position-relative h-100">
-                                        <img class="position-absolute img-fluid w-100 h-100"
-                                            src="img/images/The Chariot.jpg" style="object-fit: cover;" alt=""
-                                            data-bs-toggle="modal" data-bs-target="#imageModal"
-                                            onclick="openModal('img/images/The Chariot.jpg')">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <h1 class="mb-3">25 Years Of Experience In Kitchen</h1>
-                                    <p class="mb-4">
-                                        Modular kitchens are the latest forms of doing a kitchen. Our kitchens are
-                                        totally personalised in every way possible.
-                                    </p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Design Approach</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Innovative Solutions</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Project Management</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="tab-pane-2">
-                            <div class="row g-4">
-                                <div class="col-md-6" style="min-height: 350px;">
-                                    <div class="position-relative h-100">
-                                        <img class="position-absolute img-fluid w-100 h-100"
-                                            src="img/images/The Chalet Wardrobe.JPG" style="object-fit: cover;" alt=""
-                                            data-bs-toggle="modal" data-bs-target="#imageModal"
-                                            onclick="openModal('img/images/The Chalet Wardrobe.JPG')">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <h1 class="mb-3">23 Years Of Experience In Wardrobe</h1>
-                                    <p class="mb-4">
-                                        As we talk about wardrobes, our wardrobes are not just a box structure stuffed
-                                        with belongings, but they are designed smartly so you never have to imagine a
-                                        closet as they were done decades ago.
-                                    </p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Design Approach</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Innovative Solutions</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Project Management</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="tab-pane-3">
-                            <div class="row g-4">
-                                <div class="col-md-6" style="min-height: 350px;">
-                                    <div class="position-relative h-100">
-                                        <img class="position-absolute img-fluid w-100 h-100" src="img/vanities.jpg"
-                                            style="object-fit: cover;" alt="" data-bs-toggle="modal"
-                                            data-bs-target="#imageModal" onclick="openModal('img/vanities.jpg')">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <h1 class="mb-3">21 Years Of Experience In Vanitie</h1>
-                                    <p class="mb-4">
-                                        Vanities as we speak are not just a furniture piece that holds a sink and
-                                        faucet, but in today’s world they act as a design element for the space used in.
-                                    </p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Design Approach</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Innovative Solutions</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Project Management</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="tab-pane-4">
-                            <div class="row g-4">
-                                <div class="col-md-6" style="min-height: 350px;">
-                                    <div class="position-relative h-100">
-                                        <img class="position-absolute img-fluid w-100 h-100" src="img/wallpan1.jpg"
-                                            style="object-fit: cover;" alt="" data-bs-toggle="modal"
-                                            data-bs-target="#imageModal" onclick="openModal('img/wallpan1.jpg')">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <h1 class="mb-3">20 Years Of Experience In Wall Panelling</h1>
-                                    <p class="mb-4">
-                                        Panellings are a dress up for walls that holds the power to smartly highlight a
-                                        area of your house.
-                                    </p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Design Approach</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Innovative Solutions</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Project Management</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="tab-pane-5">
-                            <div class="row g-4">
-                                <div class="col-md-6" style="min-height: 350px;">
-                                    <div class="position-relative h-100">
-                                        <img class="position-absolute img-fluid w-100 h-100"
-                                            src="img/images/The Linea.jpg" style="object-fit: cover;" alt=""
-                                            data-bs-toggle="modal" data-bs-target="#imageModal"
-                                            onclick="openModal('img/images/The Linea.jpg')">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <h1 class="mb-3">17 Years Of Experience In Bar Setup</h1>
-                                    <p class="mb-4">
-                                        A well-designed bar setup is essential for both functionality and aesthetic
-                                        appeal. Below is a guide to organizing a bar setup.
-                                    </p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Design Approach</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Innovative Solutions</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Project Management</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="tab-pane-6">
-                            <div class="row g-4">
-                                <div class="col-md-6" style="min-height: 350px;">
-                                    <div class="position-relative h-100">
-                                        <img class="position-absolute img-fluid w-100 h-100" src="img/images/D2.jpg"
-                                            style="object-fit: cover;" alt="" data-bs-toggle="modal"
-                                            data-bs-target="#imageModal" onclick="openModal('img/images/D2.jpg')">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <h1 class="mb-3">19 Years Of Experience In Console</h1>
-                                    <p class="mb-4">
-                                        Never watch TV the traditional way again. Enjoy that favourite series with our
-                                        smartly designed and personalised TV space.
-                                    </p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Design Approach</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Innovative Solutions</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Project Management</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal to display image in full size -->
-    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="imageModalLabel">Project Image</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <img id="fullImage" class="img-fluid w-100" src="" alt="Full View">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Project End -->
 
 
     <!-- How We Work Section Start -->
@@ -634,82 +423,62 @@
     </div>
     <!-- How We Work Section End -->
 
+    <!-- afte before start -->
+    <div class="buttons-container">
+        <button id="show-before">Show Before</button>
+        <button id="show-after">Show After</button>
+    </div>
 
-    <!-- Team Start -->
-    <!-- <div class="container-fluid team pb-5 bg-light">
-        <div class="container pb-5">
-            <div class="text-center mx-auto pb-5 wow fadeInUp py-5" data-wow-delay="0.2s" style="max-width: 800px;">
-                <h4 class="text-primary">Our Team Members</h4>
-                <p class="mb-0">Meet Our Expert Team Members</p>
+    <div class="before-after-container">
+        <div class="before">
+            <img src="img/before.png" alt="Before">
+        </div>
+        <img src="img/after.jpeg" alt="After">
+        <div class="slider">
+            <div class="slider-handle"></div>
+        </div>
+    </div>
+    <!-- afte before end -->
+
+    <!-- video short play start -->
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <!-- Video 1 -->
+            <div class="col-12 col-md-3 video-item">
+                <video class="video w-100 bg-dark" style="height: 80%;" controls>
+                    <source src="img/short-1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
-            <div class="row g-4">
-                <div class="col-md-4 col-sm-6 col-12 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="team-item">
-                        <div class="team-img">
-                            <img src="img/team1.png" class="img-fluid rounded-top w-100" alt="">
-                            <div class="team-icon">
-                                <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i
-                                        class="fab fa-twitter"></i></a>
-                                <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i
-                                        class="fab fa-linkedin-in"></i></a>
-                                <a class="btn btn-primary btn-sm-square rounded-pill mb-0" href=""><i
-                                        class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="team-title p-4">
-                            <h4 class="mb-0">Mr. Mehul Goel Name</h4>
-                            <p class="mb-0">Director</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12 wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="team-item">
-                        <div class="team-img">
-                            <img src="img/team2.png" class="img-fluid rounded-top w-100" alt="">
-                            <div class="team-icon">
-                                <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i
-                                        class="fab fa-twitter"></i></a>
-                                <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i
-                                        class="fab fa-linkedin-in"></i></a>
-                                <a class="btn btn-primary btn-sm-square rounded-pill mb-0" href=""><i
-                                        class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="team-title p-4">
-                            <h4 class="mb-0">Mr. Sandeep Goel Name</h4>
-                            <p class="mb-0">Director</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-12 wow fadeInUp" data-wow-delay="0.6s">
-                    <div class="team-item">
-                        <div class="team-img">
-                            <img src="img/team3.png" class="img-fluid rounded-top w-100" alt="">
-                            <div class="team-icon">
-                                <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i
-                                        class="fab fa-twitter"></i></a>
-                                <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i
-                                        class="fab fa-linkedin-in"></i></a>
-                                <a class="btn btn-primary btn-sm-square rounded-pill mb-0" href=""><i
-                                        class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="team-title p-4">
-                            <h4 class="mb-0">Mr. Yash Goel</h4>
-                            <p class="mb-0">Director</p>
-                        </div>
-                    </div>
-                </div>
+
+            <!-- Video 2 -->
+            <div class="col-12 col-md-3 video-item">
+                <video class="video w-100 bg-dark" style="height: 80%;" controls>
+                    <source src="img/short-2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <!-- Video 3 -->
+            <div class="col-12 col-md-3 video-item">
+                <video class="video w-100 bg-dark" style="height: 80%;" controls>
+                    <source src="img/short-3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <!-- Video 4 -->
+            <div class="col-12 col-md-3 video-item">
+                <video class="video w-100 bg-dark" style="height: 80%;" controls>
+                    <source src="img/short-4.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
         </div>
-    </div> -->
-    <!-- Team End -->
+    </div>
+
+    <!-- video short play end -->
 
     <!-- Testimonial Start -->
     <div class="container-fluid testimonial pt-5">
@@ -806,7 +575,7 @@
     <div class="container-fluid bg-custom-footer text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-1">
             <div class="row g-5">
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-3">Quick Links</h4>
                     <a class="btn btn-link" href="#">About Company</a>
                     <a class="btn btn-link" href="#">Vision</a>
@@ -815,17 +584,19 @@
                     <a class="btn btn-link" href="#">Team</a>
                 </div>
 
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-3">Our Services</h4>
-                    <a class="btn btn-link" href="#">Kitchens</a>
-                    <a class="btn btn-link" href="#">Wardrobes</a>
-                    <a class="btn btn-link" href="#">Vanities</a>
-                    <a class="btn btn-link" href="#">Wall panelling </a>
-                    <a class="btn btn-link" href="#">TV Units</a>
+                    <a class="btn btn-link" href="#">Kitchen</a>
+                    <a class="btn btn-link" href="#">Wardrobe</a>
+                    <a class="btn btn-link" href="#">Vanity</a>
+                    <a class="btn btn-link" href="#">Panelling</a>
+                    <a class="btn btn-link" href="#">Console</a>
+                    <a class="btn btn-link" href="#">Bar</a>
+                    <a class="btn btn-link" href="#">Office solutions</a>
                 </div>
 
 
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-3">Contact</h4>
                     <div class="d-flex align-items-baseline">
                         <i class="fas fa-map-marker-alt me-3"></i>
@@ -858,6 +629,16 @@
                         </p>
                     </div>
 
+                    <div class="d-flex align-items-center">
+                        <img src="img/radhnaLogo.png" width="150" alt="">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6997.559334240748!2d77.160118!3d28.726130000000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d0146a846c941%3A0x499272f4a9fe378a!2sVerite%20Homes!5e0!3m2!1sen!2sin!4v1736147801889!5m2!1sen!2sin"
+                        width="" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
@@ -870,13 +651,15 @@
                         <img src="img/macreel-logo.png" alt="Macreel" title="Macreel" height="25" class="bg-light p-1">
                     </div>
                     <div class="col-md-6 d-flex justify-content-center justify-content-md-end">
-                        <div class="d-flex">
-                            <a class="btn p-0 text-light me-3" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn p-0 text-light me-3" href="#"><i class="fab fa-instagram"></i></a>
-                            <a class="btn p-0 text-light me-3" href="#"><i class="fab fa-twitter"></i></a>
+                        <div class="d-flex align-items-center">
+                            <span>Social media</span> &nbsp;
+                            <!-- <a class="btn p-0 text-light me-3" href="#"><i class="fab fa-facebook-f"></i></a> -->
+                            <a class="btn p-0 text-light me-3" href="#"><img src="img/instagram.png" width="30"
+                                    alt=""></a>
+                            <!-- <a class="btn p-0 text-light me-3" href="#"><i class="fab fa-twitter"></i></a>
                             <a class="btn p-0 text-light me-3" href="#"><i class="fab fa-linkedin-in"></i></a>
                             <a class="btn p-0 text-light me-3" href="#"><i class="fab fa-youtube"></i></a>
-                            <a class="btn p-0 text-light" href="#"><i class="fab fa-google-plus-g"></i></a>
+                            <a class="btn p-0 text-light" href="#"><i class="fab fa-google-plus-g"></i></a> -->
                         </div>
                     </div>
                 </div>
@@ -898,6 +681,8 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
