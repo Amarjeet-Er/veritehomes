@@ -261,7 +261,7 @@
 /* Mobile responsive video container */
 @media (max-width: 768px) {
     .video-container {
-        height: 300px;
+        height: 350px;
     }
 
     .video-container video {
