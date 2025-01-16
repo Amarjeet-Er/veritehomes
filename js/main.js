@@ -16,16 +16,16 @@
     new WOW().init();
 
 
-    $(window).scroll(function () {
-        const videoBottom = $('.video-container').offset().top + $('.video-container').outerHeight();
-        const scrollTop = $(this).scrollTop();
+    // $(window).scroll(function () {
+    //     const videoBottom = $('.video-container').offset().top + $('.video-container').outerHeight();
+    //     const scrollTop = $(this).scrollTop();
     
-        if (scrollTop >= videoBottom) {
-            $('.scroll-header').addClass('sticky');
-        } else {
-            $('.scroll-header').removeClass('sticky');
-        }
-    });
+    //     if (scrollTop >= videoBottom) {
+    //         $('.scroll-header').addClass('sticky');
+    //     } else {
+    //         $('.scroll-header').removeClass('sticky');
+    //     }
+    // });
     
 
 

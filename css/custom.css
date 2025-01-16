@@ -221,7 +221,7 @@
 }
 
 /* Keyframes for animation */
-@keyframes slideInPauseOut {
+/* @keyframes slideInPauseOut {
     0% {
         transform: translateX(-100%);
     }
@@ -237,7 +237,7 @@
     100% {
         transform: translateX(100%);
     }
-}
+} */
 
 /* Apply the animation */
 .slide-animation {
@@ -305,7 +305,7 @@
     position: relative;
     width: 98%;
     margin: auto;
-    max-height: 550px;
+    max-height: 650px;
     overflow: hidden;
   }
 
