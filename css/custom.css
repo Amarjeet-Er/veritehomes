@@ -260,9 +260,10 @@
 
 /* Mobile responsive video container */
 @media (max-width: 768px) {
-    .video-container {
+    /* .video-container {
         height: 350px;
-    }
+        overflow:unset;
+    } */
 
     .video-container video {
         height: 300px;
@@ -278,9 +279,9 @@
         font-size: 1.5rem;
     }
 
-    .video-text-overlay {
+    /* .video-text-overlay {
         top: 80%;
-    }
+    } */
 
     .navbar-collapse {
         background: #302f29ab;
@@ -373,3 +374,15 @@
   }
 
 /* after and before end */
+.roundedCustom{
+    border-radius: 14px;
+}
+.serviceBox{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.hover-link:hover {
+    display: none; 
+}
