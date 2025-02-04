@@ -295,6 +295,9 @@
     .logo-company>img {
         height: 50px;
     }
+    .before-after-container {  
+        max-height: 400px !important;
+    }
 }
 
 
