@@ -254,8 +254,8 @@
 }
 
 .logo-company>img {
-    width: 200px;
-    height: 80px;
+    width: auto;
+    height: 70px;
 }
 
 /* Mobile responsive video container */
@@ -306,16 +306,18 @@
     position: relative;
     width: 98%;
     margin: auto;
-    max-height: 650px;
+    max-height: 720px;
     overflow: hidden;
-  }
+}
 
-  .before-after-container img {
+.before-after-container img {
     width: 100%;
     display: block;
-  }
+    height: 720px;
+    background-size: cover;
+}
 
-  .before {
+.before {
     position: absolute;
     top: 0;
     left: 0;
@@ -323,15 +325,15 @@
     height: 100%;
     overflow: hidden;
     clip-path: inset(0 50% 0 0);
-  }
+}
 
-  .before img {
+.before img {
     position: absolute;
     top: 0;
     left: 0;
-  }
+}
 
-  .slider {
+.slider {
     position: absolute;
     top: 0;
     left: 50%;
@@ -340,25 +342,25 @@
     background: #fff;
     cursor: ew-resize;
     z-index: 2;
-  }
+}
 
-  .slider-handle {
+.slider-handle {
     position: absolute;
     top: 50%;
     left: -18px;
     width: 40px;
     height: 60px;
     border: 5px solid white;
-    border-radius:50px;
+    border-radius: 50px;
     transform: translateY(-50%);
-  }
+}
 
-  .buttons-container {
+.buttons-container {
     text-align: center;
     margin-top: 20px;
-  }
+}
 
-  .buttons-container button {
+.buttons-container button {
     padding: 10px 20px;
     margin: 0px 10px 10px;
     border: none;
@@ -367,22 +369,23 @@
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
-  }
+}
 
-  .buttons-container button:hover {
+.buttons-container button:hover {
     background-color: #0056b3;
-  }
+}
 
 /* after and before end */
-.roundedCustom{
+.roundedCustom {
     border-radius: 14px;
 }
-.serviceBox{
+
+.serviceBox {
     width: 100%;
     border-radius: 10px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .hover-link:hover {
-    display: none; 
+    display: none;
 }
