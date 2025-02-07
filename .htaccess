@@ -1,0 +1,11 @@
+RewriteEngine On
+
+# If the URL does not have .html, add .html to the requested URL
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)$ $1.html [L]
+
+# If the URL has .html, remove it
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)\.html$ /$1 [R=301,L]
